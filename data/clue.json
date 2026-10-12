@@ -1,0 +1,7 @@
+{
+  "status": "migration_completed",
+  "old_scope": "互联网服务提供者、联网使用单位",
+  "new_scope": "网络运营者、数据处理者、个人信息处理者",
+  "flag_part3": "internet}",
+  "notice": "合规视野升级完成。请将三段线索拼接，得到最终的 Flag。"
+}
