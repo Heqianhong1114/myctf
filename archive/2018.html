@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>历史归档：2018版规定</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, 'Microsoft YaHei', monospace;
+            background-color: #f4f4f4;
+            color: #1A1A1A;
+            padding: 40px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-top: 5px solid #C8102E;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 { color: #C8102E; text-align: center; }
+        .old-scope { 
+            background: #eee; 
+            padding: 15px; 
+            border-left: 4px solid #1A1A1A;
+            margin: 20px 0;
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            padding: 12px;
+            background: #1A1A1A;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .btn:hover { background: #C8102E; }
+        /* 第二段线索（Flag Part 2）：is_not_just_ */
+        .hidden-clue {
+            color: #f4f4f4; /* 白色隐藏 */
+            font-size: 12px;
+            margin-top: 20px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>公安机关互联网安全监督检查规定（2018版）</h2>
+        <p style="text-align: center; color: #666; font-size: 14px;">历史归档文件 · 已被新规替代</p>
+        
+        <div class="old-scope">
+            <strong>旧版监管对象：</strong><br>
+            互联网服务提供者、联网使用单位。
+        </div>
+        <p>根据旧版规定，公安机关主要对互联网服务提供者和联网使用单位进行监督检查。随着技术发展，这一范围已无法覆盖当前的网络空间安全需求。</p>
+        
+        <p>系统提示：旧版数据正在执行迁移，点击下方按钮可查看迁移日志。</p>
+        <button class="btn" onclick="migrateData()">执行数据迁移</button>
+
+        <!-- 第二段线索（Flag Part 2）：is_not_just_ -->
+        <div class="hidden-clue">flag_part2: is_not_just_</div>
+    </div>
+
+    <script>
+        function migrateData() {
+            // 模拟一个前端请求，引导玩家打开 Network 面板
+            // 路径基于你的仓库名 myctf
+            fetch('/myctf/data/clue.json')
+                .then(response => response.json())
+                .then(data => {
+                    alert("数据迁移完成！\n请在 Network 面板查看详细迁移记录。");
+                })
+                .catch(err => {
+                    alert("请求已发出，请在开发者工具的 Network 面板查看响应。");
+                });
+        }
+    </script>
+</body>
+</html>
